@@ -1,0 +1,12 @@
+{
+  "name": "flow-walkthrough",
+  "version": "0.3.0",
+  "owner": "roxor",
+  "maturity": "beta",
+  "status": "active",
+  "review_cadence": "per-release",
+  "target_platforms": ["claude-code", "codex-cli", "generic-agent-skills"],
+  "contract": "walkmap/1",
+  "depends_on": { "flow-canvas": "flowspec/1" },
+  "license": "MIT"
+}

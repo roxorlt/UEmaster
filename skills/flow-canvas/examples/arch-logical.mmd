@@ -1,0 +1,24 @@
+flowchart TB
+title 业务系统｜逻辑容器图（Web 请求路径）
+view container
+scope 不描述部署、高可用与安全边界
+version 2026-03-02
+todo [A1] Nginx 职责待确认（反向代理 / API 网关）
+todo [A2] 缓存模式与失效机制待确认
+subgraph 业务系统
+  subgraph 接入层
+    N["NGINX｜接入组件 [A1]"]
+  end
+  subgraph 应用层
+    A["应用服务｜业务处理"]
+  end
+  subgraph 数据层
+    D[("数据库｜主数据存储｜权威源")]
+    R[("Redis｜缓存 [A2]")]
+  end
+end
+W[["浏览器｜外部客户端"]]
+W -->|HTTPS：请求/响应| N
+N -->|HTTP：反向代理| A
+A -->|SQL：读写| D
+A -->|Redis 协议：缓存读写| R

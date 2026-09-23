@@ -1,0 +1,11 @@
+gantt
+  dateFormat HH:mm
+  title 值班日程
+  section 上午
+  巡检        :done, s1, 09:00, 30m
+  例会        :done, s2, 09:45, 45m
+  处理工单    :active, s3, after s2, 90m
+  section 下午
+  变更窗口    :crit, s4, 14:00, 60m
+  复盘        :s5, after s4, 30m
+  里程碑交接  :milestone, s6, 18:00, 0m

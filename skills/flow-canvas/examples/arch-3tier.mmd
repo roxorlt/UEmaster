@@ -1,0 +1,22 @@
+flowchart TD
+subgraph 接入层
+  A["负载均衡"]
+  B["API 网关"]
+end
+subgraph 应用层
+  C["用户服务"]
+  D["订单服务"]
+  E["支付服务"]
+end
+subgraph 数据层
+  G[["缓存"]]
+  F[["数据库"]]
+end
+A --> B
+B -->|"读写"| C
+B --> D
+B --> E
+C --> G
+D --> F
+E --> F
+E --> G

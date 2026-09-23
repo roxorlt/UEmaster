@@ -1,0 +1,13 @@
+sequenceDiagram
+  participant U as 用户
+  participant O as 订单服务
+  participant G as 支付网关
+  participant B as 银行渠道
+  U->>O: 提交订单
+  O->>G: 创建支付单
+  G->>B: 发起扣款
+  B-->>G: 扣款成功
+  G->>G: 记录支付流水
+  G-->>O: 回调支付结果
+  O->>O: 更新订单状态
+  O-->>U: 支付完成

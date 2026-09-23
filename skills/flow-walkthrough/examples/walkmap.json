@@ -1,0 +1,299 @@
+{
+  "spec": "walkmap/1",
+  "title": "宠物寄养预约流程走查",
+  "svg": "pet-boarding.svg",
+  "default_node": "C",
+  "pages": [
+    {
+      "id": "p-login",
+      "frame": "phone",
+      "file": "pages/login.html"
+    },
+    {
+      "id": "p-home-none",
+      "frame": "phone",
+      "file": "pages/home-none.html"
+    },
+    {
+      "id": "p-form",
+      "frame": "phone",
+      "file": "pages/form.html"
+    },
+    {
+      "id": "p-form-prefill",
+      "frame": "phone",
+      "file": "pages/form-prefill.html"
+    },
+    {
+      "id": "p-form-full",
+      "frame": "phone",
+      "file": "pages/form-full.html"
+    },
+    {
+      "id": "p-home-pending",
+      "frame": "phone",
+      "file": "pages/home-pending.html"
+    },
+    {
+      "id": "p-admin",
+      "frame": "wide",
+      "file": "pages/admin.html"
+    },
+    {
+      "id": "p-home-declined",
+      "frame": "phone",
+      "file": "pages/home-declined.html"
+    },
+    {
+      "id": "p-home-deposit",
+      "frame": "phone",
+      "file": "pages/home-deposit.html"
+    },
+    {
+      "id": "p-cashier",
+      "frame": "phone",
+      "file": "pages/cashier.html"
+    },
+    {
+      "id": "p-home-success",
+      "frame": "phone",
+      "file": "pages/home-success.html"
+    },
+    {
+      "id": "p-diary",
+      "frame": "phone",
+      "file": "pages/diary.html"
+    },
+    {
+      "id": "p-admin-create",
+      "frame": "wide",
+      "file": "pages/admin-create.html"
+    }
+  ],
+  "state_groups": {
+    "home": {
+      "title": "寄养首页",
+      "states": [
+        {
+          "id": "none",
+          "label": "未预约",
+          "node": "C"
+        },
+        {
+          "id": "pending",
+          "label": "待门店确认",
+          "node": "F"
+        },
+        {
+          "id": "declined",
+          "label": "已婉拒",
+          "node": "H1"
+        },
+        {
+          "id": "deposit",
+          "label": "待支付定金",
+          "node": "I1"
+        },
+        {
+          "id": "success",
+          "label": "预约成功",
+          "node": "K"
+        }
+      ]
+    },
+    "form": {
+      "title": "预约表单页",
+      "states": [
+        {
+          "id": "filling",
+          "label": "填写中",
+          "node": "E"
+        },
+        {
+          "id": "prefill",
+          "label": "带入上次信息",
+          "node": "E2"
+        },
+        {
+          "id": "full",
+          "label": "约满弹窗",
+          "node": "E1"
+        }
+      ]
+    }
+  },
+  "nodes": {
+    "A": {
+      "page": "p-home-none",
+      "state": "home/none",
+      "title": "进入寄养频道",
+      "anno": [
+        [
+          "可见性",
+          "频道入口对所有用户可见，未登录用户先引导登录"
+        ]
+      ]
+    },
+    "B1": {
+      "page": "p-login",
+      "title": "登录页",
+      "anno": [
+        [
+          "承接",
+          "统一登录页，登录成功后回到寄养频道"
+        ]
+      ]
+    },
+    "C": {
+      "page": "p-home-none",
+      "title": "寄养首页 · 未预约",
+      "anno": [
+        [
+          "内容",
+          "按距离列出可寄养门店；点「立即预约」后判断是否首次预约"
+        ]
+      ]
+    },
+    "E": {
+      "page": "p-form",
+      "title": "预约表单页 · 填写中",
+      "anno": [
+        [
+          "字段",
+          "门店、入住日期、寄养天数、宠物均为必填"
+        ],
+        [
+          "提交",
+          "提交时校验所选日期是否还有空位"
+        ]
+      ]
+    },
+    "E2": {
+      "page": "p-form-prefill",
+      "title": "预约表单页 · 带入上次信息",
+      "anno": [
+        [
+          "规则",
+          "非首次预约时带入上次的门店和宠物，入住日期需要重新选择"
+        ]
+      ]
+    },
+    "E1": {
+      "page": "p-form-full",
+      "title": "预约表单页 · 约满弹窗",
+      "anno": [
+        [
+          "触发",
+          "提交时所选日期已无空位"
+        ],
+        [
+          "操作",
+          "「换个日期」「换门店」都会关闭弹窗，停留在表单页"
+        ]
+      ]
+    },
+    "N": {
+      "page": "p-form",
+      "state": "form/filling",
+      "title": "关闭弹窗：停留预约表单页",
+      "anno": [
+        [
+          "规则",
+          "已填写内容保留，用户修改日期后重新提交"
+        ]
+      ]
+    },
+    "F": {
+      "page": "p-home-pending",
+      "title": "寄养首页 · 待门店确认",
+      "anno": [
+        [
+          "状态",
+          "等待门店接单，门店确认结果通过消息通知用户"
+        ]
+      ]
+    },
+    "G": {
+      "page": "p-admin",
+      "title": "门店接单后台",
+      "anno": [
+        [
+          "功能",
+          "待确认预约列表 + 接单 / 婉拒操作；婉拒须填写原因"
+        ]
+      ]
+    },
+    "H1": {
+      "page": "p-home-declined",
+      "title": "寄养首页 · 已婉拒",
+      "anno": [
+        [
+          "展示",
+          "门店填写的婉拒原因 + 「重新预约」按钮"
+        ],
+        [
+          "重新预约",
+          "进入带入上次信息的表单"
+        ]
+      ]
+    },
+    "I1": {
+      "page": "p-home-deposit",
+      "title": "寄养首页 · 待支付定金",
+      "anno": [
+        [
+          "时限",
+          "接单后 30 分钟内未支付定金，预约自动取消"
+        ]
+      ]
+    },
+    "I2": {
+      "page": "p-cashier",
+      "title": "支付平台 · 收银台",
+      "anno": [
+        [
+          "归属",
+          "外部支付平台承接，这里只画简化页面示意"
+        ],
+        [
+          "操作",
+          "支付完成后回到寄养首页，显示预约成功"
+        ]
+      ]
+    },
+    "K": {
+      "page": "p-home-success",
+      "title": "寄养首页 · 预约成功",
+      "anno": [
+        [
+          "展示",
+          "到店时间、门店、宠物与寄养天数"
+        ]
+      ]
+    },
+    "L": {
+      "page": "p-diary",
+      "title": "寄养日记页",
+      "anno": [
+        [
+          "归属",
+          "门店服务平台承接，这里只画简化页面示意"
+        ],
+        [
+          "内容",
+          "按时间倒序展示寄养期间的照片和记录"
+        ]
+      ]
+    },
+    "M": {
+      "page": "p-admin-create",
+      "title": "门店代客预约",
+      "anno": [
+        [
+          "规则",
+          "门店在后台直接录入的订单视为已接单，直接进入定金判断"
+        ]
+      ]
+    }
+  }
+}

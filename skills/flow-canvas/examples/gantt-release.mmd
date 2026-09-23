@@ -1,0 +1,15 @@
+gantt
+  dateFormat YYYY-MM-DD
+  title 版本发布计划
+  section 开发
+  需求分析   :done, a1, 2026-01-05, 3d
+  方案设计   :done, a2, after a1, 2d
+  核心编码   :active, a3, after a2, 5d
+  联调自测   :a4, after a3, 3d
+  里程碑 v1 封版 :milestone, m1, 2026-01-20, 0d
+  section 测试
+  回归测试   :a5, after a4, 2d
+  灰度发布   :crit, a6, after m1, 2d
+  section 上线
+  全量发布   :a7, after a6, 1d
+  里程碑上线 :milestone, m2, 2026-01-25, 0d

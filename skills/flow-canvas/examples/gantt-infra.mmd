@@ -1,0 +1,15 @@
+gantt
+  dateFormat YYYY-MM-DD
+  title 基建项目计划
+  section 规划
+  立项评审 :done, p1, 2026-03-02, 1w
+  预算审批 :done, p2, after p1, 1w
+  里程碑立项 :milestone, p3, 2026-03-16, 0d
+  section 建设
+  机房改造 :active, p4, after p3, 3w
+  设备采购 :active, p5, after p3, 2w
+  网络布线 :p6, after p5, 2w
+  里程碑基建完成 :milestone, p7, 2026-04-20, 0d
+  section 验收
+  联调验收 :p8, after p7, 1w
+  文档归档 :p9, after p8, 3d

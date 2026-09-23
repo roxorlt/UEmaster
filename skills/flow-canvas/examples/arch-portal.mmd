@@ -1,0 +1,17 @@
+flowchart TD
+subgraph 用户端
+  U["用户浏览器"]
+end
+subgraph 平台
+  P1["Web 前端"]
+  P2["业务后端"]
+end
+subgraph 外部
+  E1[["支付通道"]]
+  E2[["短信网关"]]
+end
+U --> P1
+U -->|"静态资源"| P2
+P1 --> P2
+P2 --> E1
+P2 -->|"验证码"| E2

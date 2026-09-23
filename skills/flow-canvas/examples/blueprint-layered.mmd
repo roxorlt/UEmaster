@@ -1,0 +1,50 @@
+blueprint LR
+title 分层企业架构图
+view blueprint
+layout stacked
+scope 合成数据演示
+version 2026-03-02
+
+band 用户触达层
+  domain 渠道
+    M1["门户"]
+    M2["移动端"]
+    M3["小程序"]
+  end
+end
+band 接入层
+  domain 网关
+    G1["API 网关"]
+    G2["认证中心"]
+  end
+end
+band 业务平台层
+  domain 交易域
+    T1["订单中心"]
+    T2["支付中心"]
+    T3["结算中心"]
+  end
+  domain 用户域
+    U1["账号中心"]
+    U2["会员中心"]
+  end
+end
+band 中台能力层
+  domain 营销域
+    K1["促销引擎"]
+    K2["优惠券"]
+  end
+end
+band 数据层
+  domain 存储
+    D1[("主数据库")]
+    D2[("缓存")]
+    D3[("对象存储")]
+  end
+end
+band 基础设施层
+  domain 运行域
+    R1["容器平台"]
+    R2["监控告警"]
+  end
+end

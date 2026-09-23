@@ -1,0 +1,26 @@
+erDiagram
+  USER ||--o{ ORDER : "下单"
+  USER ||--o{ ADDRESS : "收货地址"
+  ORDER }o--|| PRODUCT : "包含"
+  ORDER }o--|| ADDRESS : "发往"
+  USER {
+    int id PK
+    string name "昵称"
+    string phone
+  }
+  ORDER {
+    int id PK
+    int user_id FK
+    date created_at
+    string status
+  }
+  PRODUCT {
+    int id PK
+    string title
+    decimal price
+  }
+  ADDRESS {
+    int id PK
+    int user_id FK
+    string detail "详细地址"
+  }

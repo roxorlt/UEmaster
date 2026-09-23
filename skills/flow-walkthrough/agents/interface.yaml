@@ -1,0 +1,28 @@
+display_name: Flow Walkthrough
+display_text: 三栏流程联动原型——点流程图节点，右侧同步展示原型页面；多状态页面可在右栏切换状态
+default_prompt: 用 flow-walkthrough 把这份流程和原型做成联动演示页
+activation:
+  mode: model-invoked
+  triggers:
+    - 流程联动原型 / 流程图和原型联动
+    - 点流程节点看页面
+    - 评审演示页 / 需求走查 demo / 过流程演示
+    - flow walkthrough
+    - clickable flowchart linked to prototype pages / prototype walkthrough / product review demo
+  anti_triggers:
+    - 只要流程图（转 flow-canvas）
+    - 只要原型页面、无流程联动诉求
+execution_context:
+  runtime: python3 >= 3.8（仅标准库，零第三方依赖）
+  entry: scripts/build.py
+  network: none
+  filesystem: 仅写调用方指定的输出路径
+trust:
+  dependencies: none
+  network_access: none
+  telemetry: none
+adapter_targets: [claude, openai, generic]
+degradation:
+  - no_python3: 手工替换 templates/walkthrough.html 占位符（无自动校验，质量降级并告知用户）
+  - no_svg_input: 先调用 flow-canvas 生成流程图，缺 flow-canvas 时终止并说明依赖
+  - no_pages: 生成中性占位页仅演示联动骨架

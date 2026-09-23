@@ -1,0 +1,26 @@
+erDiagram
+  STUDENT ||--o{ ENROLL : "选课"
+  COURSE ||--o{ ENROLL : "被选"
+  TEACHER ||--o{ COURSE : "授课"
+  STUDENT {
+    int id PK
+    string name
+    string major
+  }
+  COURSE {
+    int id PK
+    int teacher_id FK
+    string title
+    int credits
+  }
+  ENROLL {
+    int id PK
+    int student_id FK
+    int course_id FK
+    int score
+  }
+  TEACHER {
+    int id PK
+    string name
+    string dept
+  }

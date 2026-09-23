@@ -1,0 +1,26 @@
+flowchart TD
+subgraph 客户端
+  M["移动 App"]
+  W["Web 端"]
+end
+subgraph 网关
+  G["API 网关"]
+end
+subgraph 服务
+  S1["用户服务"]
+  S2["订单服务"]
+  S3["消息服务"]
+end
+subgraph 存储
+  DB[["MySQL"]]
+  MQ[["消息队列"]]
+end
+M --> G
+W --> G
+G --> S1
+G --> S2
+G --> S3
+S1 --> DB
+S2 --> DB
+S2 -->|"异步"| MQ
+S3 --> MQ

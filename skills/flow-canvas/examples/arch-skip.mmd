@@ -1,0 +1,25 @@
+flowchart TD
+subgraph L2
+  A1["应用层A"]
+  A2["应用层B"]
+end
+subgraph L3
+  B1["服务层A"]
+  B2["服务层B"]
+end
+subgraph L4
+  C1["数据层A"]
+  C2["数据层B"]
+end
+subgraph L5
+  E1["AI集成A"]
+  E2["AI集成B"]
+  E3["自动化调度"]
+end
+A1 --> B1
+A2 --> B2
+B1 --> C1
+B2 --> C2
+C1 --> E1
+E1 --> E3
+E3 -->|"直连数据"| C1

@@ -1,0 +1,15 @@
+sequenceDiagram
+  participant A as 业务应用
+  participant Q as 消息队列
+  participant P as 推送服务
+  participant G as 设备网关
+  participant D as 用户设备
+  A->>Q: 投递推送任务
+  Q-->>A: 入队确认
+  Q->>P: 拉取推送任务
+  P->>P: 渲染推送内容
+  P->>G: 提交推送请求
+  G->>D: 下发通知
+  D-->>G: 送达回执
+  G-->>P: 回传送达结果
+  P-->>Q: 标记任务完成

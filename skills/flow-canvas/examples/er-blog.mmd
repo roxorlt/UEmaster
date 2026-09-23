@@ -1,0 +1,22 @@
+erDiagram
+  AUTHOR ||--o{ POST : "撰写"
+  POST }o--|| CATEGORY : "归类"
+  POST }o--o{ TAG : "打标签"
+  AUTHOR {
+    int id PK
+    string name
+  }
+  POST {
+    int id PK
+    int author_id FK
+    string title
+    text content
+  }
+  CATEGORY {
+    int id PK
+    string name
+  }
+  TAG {
+    int id PK
+    string name
+  }

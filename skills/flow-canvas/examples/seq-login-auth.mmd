@@ -1,0 +1,11 @@
+sequenceDiagram
+  participant U as 用户
+  participant A as 应用服务
+  participant D as 用户库
+  U->>A: 提交账号密码
+  A->>D: 查询账号记录
+  D-->>A: 返回密码摘要
+  A->>A: 校验密码摘要
+  A->>D: 写入登录审计
+  D-->>A: 审计写入完成
+  A-->>U: 登录成功下发令牌

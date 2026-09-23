@@ -1,0 +1,144 @@
+<svg id="flowsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 1272" width="920" height="1272" data-flowspec="1" font-family="-apple-system, PingFang SC, Segoe UI, Microsoft YaHei, sans-serif">
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555555"/></marker></defs>
+<polyline points="367,60 367,98" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<polyline points="442,130 624,130" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="533" y="122" font-size="11" fill="#888888" text-anchor="middle">否</text>
+<polyline points="744,130 802,130 802,42 427,42" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="794" y="86" font-size="11" fill="#888888" text-anchor="end">登录成功</text>
+<polyline points="367,162 367,213" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="375" y="191.5" font-size="11" fill="#888888" text-anchor="start">是</text>
+<polyline points="367,267 367,318" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="375" y="296.5" font-size="11" fill="#888888" text-anchor="start">点「立即预约」</text>
+<polyline points="455,350 624,350" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="539.5" y="342" font-size="11" fill="#888888" text-anchor="middle">否</text>
+<polyline points="684,377 684,520 367,520" fill="none" stroke="#555555" stroke-width="1.5"/>
+<text x="525.5" y="512" font-size="11" fill="#888888" text-anchor="middle">确认提交</text>
+<polyline points="367,382 367,433" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="375" y="411.5" font-size="11" fill="#888888" text-anchor="start">是</text>
+<polyline points="367,487 367,538" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="375" y="516.5" font-size="11" fill="#888888" text-anchor="start">提交预约</text>
+<polyline points="488,570 624,570" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="556" y="562" font-size="11" fill="#888888" text-anchor="middle">否</text>
+<polyline points="684,597 684,643" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="692" y="624" font-size="11" fill="#888888" text-anchor="start">点「换个日期」</text>
+<polyline points="744,670 802,670 802,570 488,570" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="794" y="620" font-size="11" fill="#888888" text-anchor="end">重新提交</text>
+<polyline points="367,602 367,653" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="375" y="631.5" font-size="11" fill="#888888" text-anchor="start">是</text>
+<polyline points="367,707 367,745" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<polyline points="367,781 367,819" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<polyline points="455,851 624,851" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="539.5" y="843" font-size="11" fill="#888888" text-anchor="middle">否</text>
+<polyline points="744,851 802,851 802,350 744,350" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="794" y="600.5" font-size="11" fill="#888888" text-anchor="end">重新预约</text>
+<polyline points="367,883 367,934" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="375" y="912.5" font-size="11" fill="#888888" text-anchor="start">是</text>
+<polyline points="466,966 624,966" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="545" y="958" font-size="11" fill="#888888" text-anchor="middle">否</text>
+<polyline points="684,993 684,1039" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="692" y="1020" font-size="11" fill="#888888" text-anchor="start">点「去支付」</text>
+<polyline points="684,1075 684,1128 427,1128" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="692" y="1101.5" font-size="11" fill="#888888" text-anchor="start">支付完成</text>
+<polyline points="367,998 367,1101" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="375" y="1053.5" font-size="11" fill="#888888" text-anchor="start">是</text>
+<polyline points="367,1155 367,1206" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="375" y="1184.5" font-size="11" fill="#888888" text-anchor="start">查看寄养日记</text>
+<polyline points="176,966 268,966" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
+<text x="222" y="958" font-size="11" fill="#888888" text-anchor="middle">录入完成</text>
+<g class="node" id="flowchart-A-0" data-node="A">
+<rect x="307" y="24" width="120" height="36" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="367" y="46.55" font-size="13" fill="#333333" text-anchor="middle">进入寄养频道</text>
+</g>
+<g class="node" id="flowchart-B-1">
+<polygon points="367,98 442,130 367,162 292,130" fill="#ededed" stroke="#aaaaaa" stroke-width="1.3"/>
+<text x="367" y="134.55" font-size="13" fill="#333333" text-anchor="middle">是否登录？</text>
+</g>
+<g class="node" id="flowchart-B1-2" data-node="B1">
+<rect x="624" y="112" width="120" height="36" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="684" y="134.55" font-size="13" fill="#333333" text-anchor="middle">登录页</text>
+</g>
+<g class="node" id="flowchart-C-3" data-node="C">
+<rect x="307" y="213" width="120" height="54" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="367" y="236.05" font-size="13" fill="#333333" text-anchor="middle">寄养首页</text>
+<text x="367" y="251.35" font-size="11" fill="#333333" text-anchor="middle">未预约</text>
+</g>
+<g class="node" id="flowchart-D-4">
+<polygon points="367,318 455,350 367,382 279,350" fill="#ededed" stroke="#aaaaaa" stroke-width="1.3"/>
+<text x="367" y="354.55" font-size="13" fill="#333333" text-anchor="middle">是否首次预约？</text>
+</g>
+<g class="node" id="flowchart-E2-5" data-node="E2">
+<rect x="624" y="323" width="120" height="54" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="684" y="346.05" font-size="13" fill="#333333" text-anchor="middle">预约表单页</text>
+<text x="684" y="361.35" font-size="11" fill="#333333" text-anchor="middle">带入上次信息</text>
+</g>
+<g class="node" id="flowchart-X-6">
+<polygon points="367,538 488,570 367,602 246,570" fill="#ededed" stroke="#aaaaaa" stroke-width="1.3"/>
+<text x="367" y="574.55" font-size="13" fill="#333333" text-anchor="middle">所选日期是否有空位？</text>
+</g>
+<g class="node" id="flowchart-E-7" data-node="E">
+<rect x="307" y="433" width="120" height="54" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="367" y="456.05" font-size="13" fill="#333333" text-anchor="middle">预约表单页</text>
+<text x="367" y="471.35" font-size="11" fill="#333333" text-anchor="middle">填写中</text>
+</g>
+<g class="node" id="flowchart-E1-8" data-node="E1">
+<rect x="624" y="543" width="120" height="54" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="684" y="566.05" font-size="13" fill="#333333" text-anchor="middle">预约表单页</text>
+<text x="684" y="581.35" font-size="11" fill="#333333" text-anchor="middle">约满弹窗</text>
+</g>
+<g class="node" id="flowchart-N-9" data-node="N">
+<rect x="624" y="643" width="120" height="54" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="684" y="666.05" font-size="13" fill="#333333" text-anchor="middle">关闭弹窗</text>
+<text x="684" y="681.35" font-size="11" fill="#333333" text-anchor="middle">停留预约表单页</text>
+</g>
+<g class="node" id="flowchart-F-10" data-node="F">
+<rect x="307" y="653" width="120" height="54" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="367" y="676.05" font-size="13" fill="#333333" text-anchor="middle">寄养首页</text>
+<text x="367" y="691.35" font-size="11" fill="#333333" text-anchor="middle">待门店确认</text>
+</g>
+<g class="node" id="flowchart-G-11" data-node="G">
+<rect x="307" y="745" width="120" height="36" rx="4" fill="#d9d9d9" stroke="#999999" stroke-width="1.3"/>
+<line x1="313" y1="745" x2="313" y2="781" stroke="#999999" stroke-width="1.3"/>
+<line x1="421" y1="745" x2="421" y2="781" stroke="#999999" stroke-width="1.3"/>
+<text x="367" y="767.55" font-size="13" fill="#333333" text-anchor="middle">门店接单后台</text>
+</g>
+<g class="node" id="flowchart-H-12">
+<polygon points="367,819 455,851 367,883 279,851" fill="#ededed" stroke="#aaaaaa" stroke-width="1.3"/>
+<text x="367" y="855.55" font-size="13" fill="#333333" text-anchor="middle">门店是否接单？</text>
+</g>
+<g class="node" id="flowchart-H1-13" data-node="H1">
+<rect x="624" y="815" width="120" height="72" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="684" y="838.55" font-size="13" fill="#333333" text-anchor="middle">寄养首页</text>
+<text x="684" y="854.85" font-size="11" fill="#333333" text-anchor="middle">已婉拒</text>
+<text x="684" y="869.85" font-size="11" fill="#333333" text-anchor="middle">展示婉拒原因</text>
+</g>
+<g class="node" id="flowchart-I-14">
+<polygon points="367,934 466,966 367,998 268,966" fill="#ededed" stroke="#aaaaaa" stroke-width="1.3"/>
+<text x="367" y="970.55" font-size="13" fill="#333333" text-anchor="middle">是否已支付定金？</text>
+</g>
+<g class="node" id="flowchart-I1-15" data-node="I1">
+<rect x="624" y="939" width="120" height="54" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="684" y="962.05" font-size="13" fill="#333333" text-anchor="middle">寄养首页</text>
+<text x="684" y="977.35" font-size="11" fill="#333333" text-anchor="middle">待支付定金</text>
+</g>
+<g class="node" id="flowchart-I2-16" data-node="I2">
+<rect x="608" y="1039" width="152" height="36" rx="4" fill="#ffffff" stroke="#888888" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="684" y="1061.55" font-size="13" fill="#666666" text-anchor="middle">支付平台 · 收银台</text>
+</g>
+<g class="node" id="flowchart-K-17" data-node="K">
+<rect x="307" y="1101" width="120" height="54" rx="4" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="367" y="1124.05" font-size="13" fill="#333333" text-anchor="middle">寄养首页</text>
+<text x="367" y="1139.35" font-size="11" fill="#333333" text-anchor="middle">预约成功</text>
+</g>
+<g class="node" id="flowchart-L-18" data-node="L">
+<rect x="307" y="1206" width="120" height="36" rx="4" fill="#ffffff" stroke="#888888" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="367" y="1228.55" font-size="13" fill="#666666" text-anchor="middle">寄养日记页</text>
+</g>
+<g class="node" id="flowchart-M-19" data-node="M">
+<rect x="20" y="939" width="156" height="54" rx="4" fill="#d9d9d9" stroke="#999999" stroke-width="1.3"/>
+<line x1="26" y1="939" x2="26" y2="993" stroke="#999999" stroke-width="1.3"/>
+<line x1="170" y1="939" x2="170" y2="993" stroke="#999999" stroke-width="1.3"/>
+<text x="98" y="962.05" font-size="13" fill="#333333" text-anchor="middle">门店代客预约</text>
+<text x="98" y="977.35" font-size="11" fill="#333333" text-anchor="middle">门店在后台录入订单</text>
+</g>
+<rect id="sel-ring" fill="rgba(74,144,217,0.08)" stroke="#4a90d9" stroke-width="2" stroke-dasharray="5 4" rx="6" visibility="hidden"/>
+</svg>

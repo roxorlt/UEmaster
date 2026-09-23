@@ -1,0 +1,13 @@
+sequenceDiagram
+  participant U as 用户
+  participant C as 客户端应用
+  participant R as 资源服务
+  participant S as 授权服务
+  U->>C: 请求受保护页面
+  C->>R: 携带令牌取资源
+  R->>S: 校验访问令牌
+  S->>S: 检查令牌有效期
+  S-->>R: 令牌有效返回权限
+  R->>R: 按权限过滤字段
+  R-->>C: 返回资源数据
+  C-->>U: 渲染页面数据

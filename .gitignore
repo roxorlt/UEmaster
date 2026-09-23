@@ -1,0 +1,14 @@
+# 系统与运行时缓存
+__pycache__/
+*.pyc
+.DS_Store
+.worktrees/
+.playwright-mcp/
+
+# 图表产物（本地生成，不上传）
+.diagrams/
+
+# 本地私有文件（不发布）
+skills/flow-canvas/plugin/
+skills/flow-canvas/agents/diagram-viewer/
+skills/flow-canvas/docs/

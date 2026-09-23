@@ -1,0 +1,26 @@
+name: selftest
+on: [push, pull_request]
+jobs:
+  selftest:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ["3.8", "3.12"]
+        exclude:
+          - os: macos-latest
+            python: "3.8"
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: flow-canvas selftest
+        run: python skills/flow-canvas/scripts/selftest.py
+      - name: flow-canvas blueprint CLI smoke
+        if: ${{ !cancelled() }}
+        run: python skills/flow-canvas/scripts/flowlayout.py skills/flow-canvas/examples/blueprint-enterprise.mmd --type blueprint --check
+      - name: flow-walkthrough selftest
+        if: ${{ !cancelled() }}
+        run: python skills/flow-walkthrough/scripts/selftest.py
