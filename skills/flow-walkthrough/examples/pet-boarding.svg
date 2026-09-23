@@ -20,7 +20,7 @@
 <polyline points="488,570 624,570" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
 <text x="556" y="562" font-size="11" fill="#888888" text-anchor="middle">否</text>
 <polyline points="684,597 684,643" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
-<text x="692" y="624" font-size="11" fill="#888888" text-anchor="start">点「换个日期」</text>
+<text x="692" y="624" font-size="11" fill="#888888" text-anchor="start">换个日期</text>
 <polyline points="744,670 802,670 802,570 488,570" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
 <text x="794" y="620" font-size="11" fill="#888888" text-anchor="end">重新提交</text>
 <polyline points="367,602 367,653" fill="none" stroke="#555555" stroke-width="1.5" marker-end="url(#arw)"/>
