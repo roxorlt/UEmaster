@@ -8,6 +8,8 @@ UEmaster 是一个给 Claude Code 和 Codex 用的开源技能，里面包含两
 
 https://github.com/user-attachments/assets/905f4869-ca8f-434a-abd7-6f845bb7c024
 
+<sub>视频有配音，GitHub 默认静音播放，记得点播放器右下角的喇叭打开声音。</sub>
+
 ## 为什么做这个
 
 评审会上，在长长的流程图和一页页原型之间来回切换，手忙脚乱；要是页面还有好几种状态，那更是雪上加霜。
