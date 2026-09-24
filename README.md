@@ -6,11 +6,7 @@ UEmaster 是一个给 Claude Code 和 Codex 用的开源技能，里面包含两
 
 *One open-source agent skill with two sub-skills, built for product reviews: click a node in the business flowchart on the left, see its prototype page in the middle, and switch the page's states on the right. Works with Claude Code and Codex.*
 
-<!-- 讲解视频放在这一行：在 GitHub 网页上编辑本文件，把 mp4 拖进来，保存后会自动变成播放器 -->
-
-![三栏评审演示页：左边是业务流程图，中间是对应的原型页面，右边是页面状态切换](docs/images/walkthrough.png)
-
-<sub>虚构示例「宠物寄养预约」：点左边的「预约表单页 · 约满弹窗」，中间显示弹窗状态，右边可以切到这个页面的其他状态。</sub>
+https://github.com/user-attachments/assets/905f4869-ca8f-434a-abd7-6f845bb7c024
 
 ## 为什么做这个
 
@@ -23,6 +19,10 @@ UEmaster 把流程图和原型放进同一个页面：
 - ✅ **右边是这个页面的状态切换按钮**，同一个页面的几种状态，点一下就能切换
 
 我自己在评审会上用了两个月，评审效率大大提高，参会同事的体验也好了很多。
+
+![三栏评审演示页：左边是业务流程图，中间是对应的原型页面，右边是页面状态切换](docs/images/walkthrough.png)
+
+<sub>虚构示例「宠物寄养预约」：点左边的「预约表单页 · 约满弹窗」，中间显示弹窗状态，右边可以切到这个页面的其他状态。</sub>
 
 ## 两个小技能
 
